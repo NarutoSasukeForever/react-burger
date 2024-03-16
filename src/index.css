@@ -1,13 +1,41 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+	--neon: #b5ff3d;
+	--interface-modal-bg: #1c1c21;
+	--interface-accent: #4c4cff;
+	--interface-active: #4c4cff;
+	--interface-input: #2f2f37;
+	--interface-success: #0cc;
+	--interface-error: #e52b1a;
+	--interface-bg: #131316;
+	---interface-modal-edge: rgba(76, 76, 255, 0.2);
+	--text-primary-light-standart-text: #f2f2f3;
+	--text-dark-grey-secondary-text: #8585ad;
+	--text-disabled: #3a3a55;
+    --font-family: "JetBrains Mono", sans-serif;
+    --second-family: "Iceland", sans-serif;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  src: url('./fonts/JetBrainsMono-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  src: url('./fonts/JetBrainsMono-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Iceland';
+  font-style: normal;
+  src: url('./fonts/Iceland-Regular.ttf') format('ttf');
 }
