@@ -25,7 +25,7 @@ export default class BurgerIngredients extends Component {
 
     return (
       <>
-      <main className='ml-25'> 
+      <main className={styles.container}> 
         <section className='mb-10 mt-10'>
           <h1 className="text_type_main-large mb-5">Соберите бургер</h1>
             <div style={{ display: 'flex' }}>
@@ -44,13 +44,20 @@ export default class BurgerIngredients extends Component {
         <section className='mb-10'>
           <h1 className="text_type_main-medium mb-6">Булки</h1>
           <div style={{ display: 'flex' }} className='ml-4 mr-6'>
-          {mainItems.map(item => (
-          <div key={item._id}>
-            <img src={item.image} alt={item.name} className="ml-4 mr-4"/>
-            <div className={styles.price}><p className="text text_type_digits-default mr-1">{item.price}</p><CurrencyIcon type="primary"/></div>
-            <div><p className="text text_type_main-default">{item.name}</p></div>
-          </div>
-          ))}
+          
+            <div style={{position: 'relative'}}>
+              <img src="https://code.s3.yandex.net/react/code/bun-02.png" alt='булка' className="ml-4 mr-4"/>
+              <Counter count={1} size="default" extraClass="m-1" />
+              <div className={styles.price}><p className="text text_type_digits-default mr-1">1255</p><CurrencyIcon type="primary"/></div>
+              <div><p className="text text_type_main-default">Краторная булка N-200i</p></div>
+            </div>
+
+            <div>
+              <img src="https://code.s3.yandex.net/react/code/bun-01.png" alt='булка' className="ml-4 mr-4"/>
+              <div className={styles.price}><p className="text text_type_digits-default mr-1">1255</p><CurrencyIcon type="primary"/></div>
+              <div><p className="text text_type_main-default">Флюоресцентная булка R2-D3</p></div>
+            </div>
+          
           </div>
         </section>
         

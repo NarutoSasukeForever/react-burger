@@ -12,8 +12,8 @@ export default class BurgerConstructor extends Component {
   render() {
     return (
       <>
-        <section className='mt-25'>
-            <div className='ml-25 mr-25' >
+        <section className={styles.container}>
+            <div className='ml-25 mr-25 mt-25' >
                 <div className='mb-2'>
                   <ConstructorElement
                     type="top"
